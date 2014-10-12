@@ -1,9 +1,9 @@
-Jansson README
+Jansson-BB10 README
 ==============
 
 .. image:: https://travis-ci.org/akheron/jansson.png
   :target: https://travis-ci.org/akheron/jansson
-  
+
 .. image:: https://ci.appveyor.com/api/projects/status/lmhkkc4q8cwc65ko
   :target: https://ci.appveyor.com/project/akheron/jansson
 
@@ -24,27 +24,33 @@ Jansson is licensed under the `MIT license`_; see LICENSE in the
 source distribution for details.
 
 
-Compilation and Installation
-----------------------------
+Compilation and Installation for BlackBerry 10
+----------------------------------------------------------
 
-If you obtained a source tarball, just use the standard autotools
-commands::
+- Import project into Momentics IDE
 
-   $ ./configure
-   $ make
-   $ make install
-
-To run the test suite, invoke::
-
-   $ make check
-
-If the source has been checked out from a Git repository, the
-./configure script has to be generated first. The easiest way is to
-use autoreconf::
-
-   $ autoreconf -i
+- Build
 
 
+Including Jansson in another BB10 Project
+------------------------------------
+
+- Import Jansson into workspace
+
+- Right click on the project you want to use Jansson with
+
+- Select Configure -> Add Library...
+
+- Select "Library project in the workspace" and then "Next >"
+
+- Select "public" by clicking the checkbox (public and jansson will be selected) and click "Finish"
+
+
+In your project you can now use Jansson
+
+   #include <jansson.h>
+
+   
 Documentation
 -------------
 
