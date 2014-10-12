@@ -31,3 +31,5 @@ stamp-h1
 /jansson_private_config.h
 /build
 *.exe
+/Device-Debug
+/Simulator-Debug
